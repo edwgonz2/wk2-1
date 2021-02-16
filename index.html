@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--author:Edward Gonzales
+    edwgonz2@uat.edu
+    wk2-1 assignment
+-->
+<html>
+
+<head>
+    <title>
+        UATSPACE Page
+    </title>
+</head>
+
+<body style='background-color:rgb(196, 196, 196)'>
+    <img src="UATspaceLogo.jpg">
+    <h1>
+        UAT Space Program
+    </h1>
+
+    <script>
+        document.write("Test of the document.write function");
+    </script>
+    <p style='font-family:Impact; font-size:22px; color:rgb(2, 2, 63);'>
+        Test of the paragraph tags
+    </p>
+    
+    <script>
+        //alert("Test of the alert function!");
+    </script>
+    <br>
+    <p id="ctdnTimer"><font size='12px' face='chiller' color='red'>Countdown Timer Results</font></p>
+    <br>
+    <button onclick="countdownTimer();">Start</button>
+    <button>Stop</button>
+    <br>
+    <script>
+    function countdownTimer(){
+        //start at 50 sec
+        setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "50";
+            }, 0000);
+
+            //45 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "45";
+            }, 5000);
+
+            //40 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "40";
+            }, 10000);
+
+            //35 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "35";
+            }, 15000);
+
+            //30 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "30";
+            }, 20000);
+
+            //25 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "25";
+            }, 25000);
+
+            //20 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "20";
+            }, 30000);
+
+            //15 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "15";
+            }, 35000);
+
+            //10 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "10";
+            }, 40000);
+
+            //5 sec
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "5";
+            }, 45000);
+
+            //0 sec, blast off!
+            setTimeout(function(){
+            document.getElementById("ctdnTimer").innerHTML = "0";
+            alert("Blast Off!")
+            }, 50000);
+
+
+    }
+
+    </script>
+</body>
+
+</html>
